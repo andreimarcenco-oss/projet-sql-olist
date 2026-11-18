@@ -1,0 +1,4 @@
+# Base de données et données brutes (trop volumineuses, à télécharger sur Kaggle)
+*.db
+*.csv
+*.zip
