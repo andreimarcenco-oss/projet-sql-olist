@@ -1,6 +1,6 @@
 # Analyse clients d'un site e-commerce : Olist
 
-> **Projet en cours.** Étapes 1 et 2 terminées, les suivantes arrivent au fil de l'eau.
+> **Projet en cours.** Étapes 1 à 3 terminées, les suivantes arrivent au fil de l'eau.
 
 ## Le contexte
 
@@ -34,7 +34,15 @@ Je me place dans la peau d'un data analyst de l'entreprise, chargé de répondre
 
 **4. Un plateau en 2018.** Le CA culmine en avril-mai (environ 990 000 R$ par mois) puis recule légèrement : la croissance s'essouffle.
 
-**Question ouverte :** si les clients ne reviennent pas, la croissance repose entièrement sur l'acquisition de nouveaux clients. C'est l'objet de l'étape suivante.
+**5. 97 % des clients ne commandent qu'une seule fois.** Le taux de clients récurrents n'est que de 3 %, et 94 % du CA vient de clients qui ne reviennent jamais : la croissance repose entièrement sur l'acquisition.
+
+**6. Un client récurrent vaut environ 1,8 fois un client occasionnel**, uniquement parce qu'il commande plus souvent : son panier moyen est même plus bas (122 R$ contre 138 R$).
+
+**7. Un délai moyen de retour de 81 jours, mais trompeur.** Environ un tiers des « 2es commandes » sont passées le même jour que la 1re ; les vrais retours arrivent souvent plusieurs mois plus tard.
+
+**8. La géographie n'explique pas la faible fidélité.** Dans les états de plus de 1 000 clients, le taux de récurrence reste entre 1,6 % et 3,4 %.
+
+**Question ouverte :** si ce n'est pas la géographie, l'expérience client (délais de livraison, avis) explique-t-elle que les clients ne reviennent pas ?
 
 ## Qualité des données
 
@@ -44,7 +52,7 @@ Je me place dans la peau d'un data analyst de l'entreprise, chargé de répondre
 
 - [x] 01 - Découverte des données : [`sql/01_decouverte.sql`](sql/01_decouverte.sql)
 - [x] 02 - Vue d'ensemble : CA, commandes, panier moyen, évolution mensuelle : [`sql/02_vue_ensemble.sql`](sql/02_vue_ensemble.sql)
-- [ ] 03 - Fidélité : part des clients qui reviennent et délai de retour
+- [x] 03 - Fidélisation : clients récurrents, part du CA, panier, délai de retour, géographie : [`sql/03_fidelisation.sql`](sql/03_fidelisation.sql)
 - [ ] 04 - Segmentation RFM des clients
 - [ ] 05 - Livraison et satisfaction : les retards font-ils baisser les notes ?
 - [ ] 06 - Catégories : ce qui rapporte et ce qui déçoit
